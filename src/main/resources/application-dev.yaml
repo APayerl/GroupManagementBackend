@@ -1,0 +1,16 @@
+spring:
+  docker:
+    compose:
+      enabled: true
+      file: compose.yaml
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/groupmanagement
+    username: myuser
+    password: secret
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+flyway:
+  baselineOnMigrate: true

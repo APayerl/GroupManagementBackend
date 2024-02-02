@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:15.5-alpine3.19
+    environment:
+      - 'POSTGRES_DB=groupmanagement'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=myuser'
+    ports:
+      - '5432:5432'
