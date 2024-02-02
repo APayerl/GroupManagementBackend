@@ -1,8 +1,10 @@
 package se.payerl.groupmanagement.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import se.payerl.groupmanagement.models.Group;
+import se.payerl.groupmanagement.entities.GroupEntity;
 
-public interface GroupRepository extends JpaRepository<Group, Long> {
+import java.util.UUID;
+
+public interface GroupRepository extends JpaRepository<GroupEntity, UUID> {
 
 }
